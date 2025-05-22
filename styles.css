@@ -1,1 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Anpassade färger för gasmeter */
+.bg-gas-low { @apply bg-emerald-500; }
+.bg-gas-medium { @apply bg-amber-500; }
+.bg-gas-high { @apply bg-red-500; }
+
+/* Animeringar */
+.gas-bar-transition {
+  transition: width 1s ease-out, background-color 0.5s ease;
+}
