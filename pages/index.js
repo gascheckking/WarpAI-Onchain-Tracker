@@ -1,6 +1,7 @@
 import GasMeter from '../components/GasMeter';
 import ActivityFeed from '../components/ActivityFeed';
 import QuickActions from '../components/QuickActions';
+import WalletConnect from '../components/WalletConnect';
 
 export default function Home() {
   return (
@@ -8,17 +9,20 @@ export default function Home() {
       {/* Header */}
       <header className="flex justify-between items-center mb-6">
         <div className="flex items-center">
-          <img src="/assets/warpai-logo.png" alt="WarpAI" className="h-8 mr-2" />
+          <img 
+            src="/assets/warpai-logo.png" 
+            alt="WarpAI" 
+            className="h-8 mr-2"
+          />
           <h1 className="font-bold text-xl">WarpAI</h1>
         </div>
-        <button className="bg-purple-600 px-3 py-1 rounded-lg text-sm">
-          Connect Wallet
-        </button>
+        <WalletConnect />
       </header>
 
-      {/* Main Content */}
+      {/* Gas Tracker */}
       <GasMeter />
       
+      {/* Stats Section */}
       <div className="my-6 p-4 bg-gray-800 rounded-lg">
         <h2 className="font-bold mb-2">💰 Your Stats</h2>
         <div className="grid grid-cols-2 gap-4">
@@ -33,7 +37,10 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Activity Feed */}
       <ActivityFeed />
+
+      {/* Quick Actions */}
       <QuickActions />
     </div>
   );
