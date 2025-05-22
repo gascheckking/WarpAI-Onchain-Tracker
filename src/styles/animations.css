@@ -1,0 +1,12 @@
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+.gas-bar-transition {
+  transition: width 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
