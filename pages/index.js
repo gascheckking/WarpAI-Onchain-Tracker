@@ -10,7 +10,7 @@ export default function Home() {
       <header className="flex justify-between items-center mb-6">
         <div className="flex items-center">
           <img 
-            src="/assets/warpai-logo.png"
+            <img src="/assets/warpai-logo.png" alt="WarpAI" className="h-8 mr-2" />
             alt="WarpAI" 
             className="h-8 mr-2"
           />
